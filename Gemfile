@@ -8,6 +8,9 @@ gemspec
 ENV["RAILS_VERSION"] ||= '4.2'
 
 case ENV['RAILS_VERSION']
+when '6.0.0.rc2'
+  gem 'rails', "~> 6.0.0.rc2"
+  gem 'responders', '~> 2.0'
 when '5.1'
   gem 'rails', "~> 5.1.0"
   gem 'responders', '~> 2.0'
